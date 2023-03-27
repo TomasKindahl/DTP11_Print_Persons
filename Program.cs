@@ -12,15 +12,17 @@
         class Person
         {
             /// <summary>
-            /// name includes 
+            /// name includes [AGRAJAG]
             /// </summary>
-            public string name, phone, address;
+            public string name;
+            public string phone;
+            public string address;
             /// <summary>
             /// Main constructor
             /// </summary>
-            /// <param name="name"></param>
-            /// <param name="phone"></param>
-            /// <param name="address"></param>
+            /// <param name="name">name of the Person</param>
+            /// <param name="phone">phone number</param>
+            /// <param name="address">street address</param>
             /// <example></example>
             public Person(string name, string phone, string address)
             {
@@ -32,6 +34,11 @@
             /// <returns>the full name</returns>
             /// <example><code>string name = p.GetName();</code></example>
             public string GetName() => name;
+            /// <summary>
+            /// [SIMSALABIM]
+            /// </summary>
+            public string Phone { get => phone; set => phone = value; }
+            public string Address { get { return Address; } set { address = value; } } 
             public void Print()
                 => Console.WriteLine($"{name,-20} {phone,-15} {address,-20}");
         }
