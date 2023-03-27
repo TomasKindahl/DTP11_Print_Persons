@@ -1,6 +1,6 @@
 ﻿namespace DTP11_Print_Persons
 {
-    internal class Program
+    class Program
     {
         /// <summary>
         /// 
