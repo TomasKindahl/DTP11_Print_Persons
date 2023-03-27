@@ -38,7 +38,6 @@
             /// [SIMSALABIM]
             /// </summary>
             public string Phone { get => phone; set => phone = value; }
-            public string Address { get { return Address; } set { address = value; } } 
             public void Print()
                 => Console.WriteLine($"{name,-20} {phone,-15} {address,-20}");
         }
